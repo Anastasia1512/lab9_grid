@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost';
+}
+
+.container {
+    height: 100vh;
+}
+
+.fon {
+    background: url('../img/fon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    justify-content: end;
+
+}
+
+.head {
+    padding-right: 70px;
+    padding-top: 20px;
+    display: grid;
+    justify-content: end;
+    z-index: 8;
+}
+
+.head ul {
+    width: 700px;
+    height: 60px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu {
+    grid-column: 2/3;
+}
+
+.line {
+    height: 2px;
+    width: 18px;
+    background: #000;
+    margin: 3px 4px;
+}
+
+.knopka {
+    background: white;
+    border-radius: 28px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+}
+
+.knopka a {
+    color: black;
+    text-decoration: none;
+}
+
+.knopka a:hover {
+    color: green;
+}
+
+.text {
+    width: 40%;
+    justify-self: end;
+    text-align: right;
+    padding-right: 70px;
+    color: white;
+    z-index: 8;
+}
+
+.text-1 {
+    font-size: 95px;
+}
+
+.text-2 {
+    font-size: 28px;
+}
+
+.knopka-1 {
+    width: 200px;
+    height: 60px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 70px;
+}
+
+.v_1 {
+    height: 100vh;
+    position: absolute;
+    grid-row: 1/4;
+    bottom: 0;
+    right: 250px;
+    z-index: 1;
+}
+
+.novinki {
+    justify-self: center;
+    font-size: 50px;
+    z-index: 8;
+}
+
+.cards {
+    display: grid;
+    grid-row: 2/4;
+    z-index: 8;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.cards * {
+    justify-self: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    justify-content: center;
+}
+
+.card a {
+    color: #9A1212;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.v_2 {
+    position: absolute;
+    grid-row: 1/5;
+    height: 100vh;
+    right: 100px;
+    z-index: 1;
+}
+
+.footer {
+    grid-row: 4/5;
+    height: 110px;
+    width: 100%;
+    background: #F3F3F3;
+    justify-self: start;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    position: relative;
+    z-index: 8;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1550px){
+    .text-1 {
+        font-size: 65px;
+    }
+    .text-2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .fon {
+        background: #9A1212;
+    }
+    .head {
+        justify-content: center;
+        padding-right: 0;
+    }
+    .head ul {
+        width: 500px;
+        height: 45px;
+    }
+    .text {
+        width: 80%;
+        justify-self: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
+    .knopka-1 {
+        height: 45px;
+        justify-self: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .text-1 {
+        font-size: 55px;
+    }
+    .text-2 {
+        font-size: 21px;
+    }
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .head ul {
+        width: 350px;
+        height: 38px;
+    }
+    .card-2 {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .text {
+        width: 100%;
+    }
+}

@@ -1,0 +1,186 @@
+.content {
+    grid-template-rows: 100px minmax(50px, 150px) 1fr;
+}
+.knopka-2 {
+    position: relative;
+    width: 80px;
+    height: 64px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    z-index: 8;
+}
+
+.knopka-2 img {
+    height: 50px;
+    width: 50px;
+}
+
+.knopka {
+    background: #F3F3F3;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+}
+
+.v_3 {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.name {
+    font-size: 35px;
+    justify-self: center;
+}
+
+#tomat {
+    width: 730px;
+    height: 400px;
+    background: #9A1212;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr;
+    align-self: start;
+    justify-self: center;
+    border-radius: 45px;
+    z-index: 8;
+    margin-bottom: 20px;
+}
+
+#tomat p {
+    grid-column: 1/2;
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 20px;
+    align-self: center;
+}
+#tomat img {
+    position: relative;
+    grid-column: 2/3;
+    height: 100%;
+    border-radius: 45px;
+}
+
+.dispgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dispgrid p {
+    justify-self: end;
+    margin-right: 10px;
+    color: #9A1212;
+}
+.company {
+    grid-row: 2/4;
+    width: 80%;
+    justify-self: center;
+    font-size: 25px;
+    align-self: center;
+}
+.company-1 {
+    display: flex;
+}
+
+.v_4 {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.bg_red {
+    background: #9A1212;
+}
+
+.bg_red a {
+    color: white;
+}
+
+.cards {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+@media screen and (max-width: 1050px) {
+    .logo {
+        display: none;
+    }
+    #tomat p {
+        padding: 0;
+        font-size: 22px;
+    }
+    #tomat {
+        width: 600px;
+        height: 330px;
+    }
+    #tomat img {
+        /* justify-self: end; */
+        width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .c-5 {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .c-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .company {
+        width: 95%;
+        font-size: 18px;
+    }
+    .company-1 img {
+        height: 130px;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .c-3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #tomat {
+        width: 400px;
+        height: 330px;
+    }
+    #tomat p {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #tomat {
+        width: 350px;
+        height: 330px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .c-2 {
+        display: none;
+    }
+}
